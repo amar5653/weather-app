@@ -4,3 +4,77 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box ;
 }
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 90%;
+max-width: 470px;
+    margin: 20px auto;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 43px;
+    background: linear-gradient(#e66465, #9198e5);;
+    box-shadow:  5px 5px 5px rgb(75, 34, 34);
+    padding: 30px 30px;
+ 
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search input{
+    border-radius: 20px;
+    font-size: 20px;
+    border:#e66465;
+    padding:10px;
+    height:50px;
+}
+.search .btn{
+    border-radius: 40px;
+    border: none;
+    height:50px;
+    width:50px;
+    cursor:pointer;
+}
+.search .btn i{
+    padding:0 auto;
+    margin:0 auto;
+    font-size:20px;
+}
+
+.weather{
+     display: none;
+   padding:20px;
+   margin:10px auto;
+}
+.weather h1,h2{
+    color:rgb(241, 241, 168);
+    font-size: 50px;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.details .col{
+   font-size: 17px;
+   color:rgb(241, 241, 168);
+   display:flex;
+   justify-content: space-evenly;
+   gap:10px;
+}
+.details .col img{
+    width: 50px;
+    height:40px;
+}
+.error{
+    text-align: left;
+    font-size:14px;
+    margin:10px;
+    display:none;
+    color:rgb(246, 246, 242);
+    font-weight:500;
+}

@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
     <div class="container">
-
-        <div class="search">
-            <input type="text" placeholder="Enter the City">
-            <button class="btn"><img src="weather-app-img/images/search.png"></button>
-        </div>
-
-        <div class="weather">
-            <img src="weather-app-img/images/drizzle.png" alt="drizzling weather">
-             <h1>-4°C</h1>
-             <h2>London</h2>
-        </div>
+      <div class="search">
+        <input id="cityname" type="text" placeholder="Enter the City" />
+        <button class="btn" onclick="checkWeather()">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      
+      <div class="error"><p>Invalid city name</p></div>
+      <div class="weather">
+        <img
+          class="weather-img"
+          src="weather-app-img/images/drizzle.png"
+          alt="drizzling weather"
+        />
+        <h1 id="temp">-4°C</h1>
+        <h2 id="city">London</h2>
 
         <div class="details">
-            <div class="col">
-                <img src="weather-app-img/images/mist.png" alt="mist">
-                <p>5mph</p>
+          <div class="col">
+            <img src="weather-app-img/images/humidity.png" alt="clouds" />
+            <div>
+              <p class="humidity">85%</p>
+              <p>Humidity</p>
             </div>
-            <div class="col">
-                <img src="weather-app-img/images/humidity.png" alt="clouds">
-                <p>85%</p>
+          </div>
+          <div class="col">
+            <img src="weather-app-img/images/wind.png" alt="clouds" />
+            <div>
+              <p class="wind">15Km/hour</p>
+              <p>Wind Speed</p>
             </div>
-            <div class="col">
-                <img src="weather-app-img/images/wind.png" alt="clouds">
-                <p>15Km per hour</p>
-            </div>
-            <div class="col">
-                <img src="weather-app-img/images/snow.png" alt="clouds">
-                <p>20%</p>
-            </div>
+          </div>
         </div>
-
+      </div>
     </div>
-    
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
